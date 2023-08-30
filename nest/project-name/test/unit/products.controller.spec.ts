@@ -64,6 +64,7 @@ describe('ProductsController', () => {
         price: 21,
         category: 'Electronics',
         stockQuantity: 100,
+        country:"US"
        
       };
   
@@ -111,7 +112,7 @@ describe('ProductsController', () => {
         price: 10.99,
         category: 'Electronics',
         stockQuantity: 100,
-        
+        country:"US"
       };
       await productRepository.save(mockProduct);
   
@@ -122,6 +123,7 @@ describe('ProductsController', () => {
         price: 26.99,
         category: 'Clothing',
         stockQuantity: 50,
+        country:"US"
        
       };
   

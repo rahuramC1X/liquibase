@@ -8,6 +8,7 @@ export const productsMockData: Products[] = [
     category: 'Category 1',
     price: 10.99,
     stockQuantity: 50,
+    country:"US"
     
   },
   {
@@ -16,7 +17,7 @@ export const productsMockData: Products[] = [
     category: 'Category 2',
     price: 20.99,
     stockQuantity: 30,
-   
+    country: "US"
   },
   // Add more mock products as needed
 ];
