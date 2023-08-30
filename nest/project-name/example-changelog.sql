@@ -2,4 +2,4 @@
 
 --changeset your.name:1 labels:example-label context:example-context
 --comment: example comment
-ALTER TABLE PRODUCTS ADD COLUMN COUNTRY VARCHAR(2)
+alter table products add column country varchar(2)

@@ -17,6 +17,10 @@ export class ProductsService {
     const response =  await this.productRepository.find();
     return response;
   }
+  async getCountries(country:string):Promise<Products[]>{
+    const response =await this.productRepository.find({where:{country:country}})
+    return response;
+  }
 
   async getProduct(id: number): Promise<Products> {
   

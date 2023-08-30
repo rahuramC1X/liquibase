@@ -19,6 +19,12 @@ export class ProductsController {
     return this.productService.getProduct(id);
   }
 
+  @Get('c/:country')
+  getCountries(@Param('country') country: string): Promise<Products[]> {
+    console.log(country)
+    return this.productService.getCountries(country);
+  }
+
   @Post()
   createProduct(@Body() productData: Products): Promise<Products> {
     return this.productService.createProduct(productData);
